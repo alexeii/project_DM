@@ -39,7 +39,8 @@ const toggleModal = () => {
                 fixedGift.style.display = "none";
             } else if (
                 target.matches(".close_icon") ||
-                !target.closest(".form-content")
+                !target.closest(".form-content") ||
+                target.matches(".close-btn")
             ) {
                 giftForm.style.display = "none";
             }

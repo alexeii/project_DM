@@ -2,8 +2,11 @@
 
 import toggleModal from "./modules/toggleClubSelect";
 import arrowScroll from "./modules/arrowScroll";
+import burgerMenu from "./modules/burgerMenu";
 
 //выбop клубa
 toggleModal();
-//стрелка
+//стрелка и бургерменю при скролле
 arrowScroll();
+//burgerMenu
+burgerMenu();

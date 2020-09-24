@@ -1,8 +1,6 @@
 "use strict";
 
-
-import toggleClubSelect from './modules/toggleClubSelect';
-
+import toggleModal from "./modules/toggleClubSelect";
 
 //выбop клубa
-toggleClubSelect();
+toggleModal();

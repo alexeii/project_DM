@@ -3,6 +3,7 @@
 import toggleModal from "./modules/toggleClubSelect";
 import arrowScroll from "./modules/arrowScroll";
 import burgerMenu from "./modules/burgerMenu";
+import mainSlider from "./modules/mainSlider";
 
 //выбop клубa
 toggleModal();
@@ -10,3 +11,5 @@ toggleModal();
 arrowScroll();
 //burgerMenu
 burgerMenu();
+//mainSlider
+mainSlider();

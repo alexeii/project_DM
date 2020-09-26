@@ -1650,6 +1650,32 @@ nav.popup-menu .close-menu-btn img {
     bottom: 5%
 }
 
+#gallery .gallery-slider .slider-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -65px;
+    z-index: 1000
+}
+
+#gallery .gallery-slider .slider-dots li {
+    float: left
+}
+
+#gallery .gallery-slider .slider-dots li button {
+    width: 22px;
+    height: 4px;
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    color: transparent;
+    margin-right: 5px
+}
+
+#gallery .gallery-slider .slider-dots li.slick-active button {
+    background-color: #ffd11a
+}
+
 #cards {
     padding-bottom: 4rem
 }

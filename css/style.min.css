@@ -1598,7 +1598,8 @@ nav.popup-menu .close-menu-btn img {
 }
 
 #gallery {
-    background-color: #fff
+    background-color: #fff;
+    position: relative
 }
 
 #gallery .gallery-bg {
@@ -1620,28 +1621,35 @@ nav.popup-menu .close-menu-btn img {
 
 #gallery .gallery-slider .slider-arrow {
     position: absolute;
-    top: 50%;
+    top: 60%;
     margin-top: -18px;
     z-index: 100;
     cursor: pointer
 }
 
-#gallery .gallery-slider .slider-arrow span {
+#gallery .gallery-slider .slider-arrow {
     display: block;
     width: 36px;
     height: 37px;
     background-color: #f4c71b;
     border-radius: 50%;
     text-align: center;
-    padding-top: 11px
+    padding-top: 11px;
+
 }
 
 #gallery .gallery-slider .slider-arrow.prev {
-    left: 0
+    left: 0;
+    background-image: url(../images/arrow-left.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
 #gallery .gallery-slider .slider-arrow.next {
-    right: 0
+    right: 0;
+    background-image: url(../images/arrow-right.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat
 }
 
 #gallery .gallery-slider .slider-dots {
@@ -1652,9 +1660,9 @@ nav.popup-menu .close-menu-btn img {
 
 #gallery .gallery-slider .slider-dots {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    margin-left: -65px;
+    /* bottom: 50px; */
+    /* left: 50%; */
+    /*  margin-left: -65px; */
     z-index: 1000
 }
 
@@ -2691,6 +2699,6 @@ p.personal-data input[type=checkbox]:checked+label:before {
     }
 
     .slider-dots {
-        bottom: 30px
+        display: none !important
     }
 }

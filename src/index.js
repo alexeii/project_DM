@@ -6,6 +6,7 @@ import burgerMenu from "./modules/burgerMenu";
 import mainSlider from "./modules/mainSlider";
 import sliderGallery from "./modules/sliderGallery";
 import calc from "./modules/calc";
+import sliderCarusel from "./modules/sliderCarusel";
 
 //выбop клубa
 toggleModal();
@@ -19,3 +20,5 @@ mainSlider();
 sliderGallery();
 //калькулятор
 calc();
+//слайдер карусель
+sliderCarusel();

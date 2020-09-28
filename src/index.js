@@ -7,6 +7,8 @@ import mainSlider from "./modules/mainSlider";
 import sliderGallery from "./modules/sliderGallery";
 import calc from "./modules/calc";
 import sliderCarusel from "./modules/sliderCarusel";
+import validateForm from "./modules/validateForm";
+import sendForm from "./modules/sendForm";
 
 //выбop клубa
 toggleModal();
@@ -22,3 +24,7 @@ sliderGallery();
 calc();
 //слайдер карусель
 sliderCarusel();
+//валидация
+validateForm();
+//отправка форм 
+sendForm();

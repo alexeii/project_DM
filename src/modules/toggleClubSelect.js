@@ -5,6 +5,7 @@ const toggleModal = () => {
     const callbackForm = document.querySelector("#callback_form");
     const fixedGift = document.querySelector(".fixed-gift>img");
     const giftForm = document.querySelector("#gift");
+    const popupThanks = document.querySelector('#thanks');
     document.addEventListener("click", (event) => {
         const target = event.target;
         //выбрать клуб
@@ -44,6 +45,11 @@ const toggleModal = () => {
             ) {
                 giftForm.style.display = "none";
             }
+        }
+        if (target.matches(".close_icon") ||
+            !target.closest(".form-content") ||
+            target.matches(".close-btn")) {
+            popupThanks.style.display = "none";
         }
     });
 };

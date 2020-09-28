@@ -585,8 +585,8 @@ html#schelkovo #cards #card_order .cards-types {
   margin-bottom: 20px;
 }
 
-html#mozaika #cards #card_order input[type="radio"] + label,
-html#schelkovo #cards #card_order input[type="radio"] + label {
+html#mozaika #cards #card_order input[type="radio"]+label,
+html#schelkovo #cards #card_order input[type="radio"]+label {
   display: inline-block;
   width: 145px;
   height: 92px;
@@ -604,8 +604,8 @@ html#schelkovo #cards #card_order input[type="radio"] + label {
   cursor: pointer;
 }
 
-html#mozaika #cards #card_order input[type="radio"]:checked + label,
-html#schelkovo #cards #card_order input[type="radio"]:checked + label {
+html#mozaika #cards #card_order input[type="radio"]:checked+label,
+html#schelkovo #cards #card_order input[type="radio"]:checked+label {
   background-image: none;
   outline: 0;
   background-color: #ffd11a;
@@ -679,6 +679,7 @@ html#schelkovo .advantages .wrapper {
 }
 
 @media only screen and (max-width: 1199px) {
+
   html#mozaika .advantages .wrapper,
   html#schelkovo .advantages .wrapper {
     -ms-flex-wrap: wrap;
@@ -696,6 +697,7 @@ html#schelkovo .advantages .wrapper {
 }
 
 @media only screen and (max-width: 991px) {
+
   html#mozaika .head-slider,
   html#schelkovo .head-slider {
     height: 340px;
@@ -703,6 +705,7 @@ html#schelkovo .advantages .wrapper {
 }
 
 @media only screen and (max-width: 850px) {
+
   html#mozaika .advantages .wrapper,
   html#schelkovo .advantages .wrapper {
     -webkit-box-pack: center;
@@ -712,6 +715,7 @@ html#schelkovo .advantages .wrapper {
 }
 
 @media only screen and (max-width: 767px) {
+
   html#mozaika .about-club .wrapper,
   html#schelkovo .about-club .wrapper {
     -ms-flex-wrap: wrap;
@@ -764,13 +768,14 @@ html#schelkovo .advantages .wrapper {
     flex-wrap: wrap;
   }
 
-  html#mozaika #cards #card_order input[type="radio"] + label,
-  html#schelkovo #cards #card_order input[type="radio"] + label {
+  html#mozaika #cards #card_order input[type="radio"]+label,
+  html#schelkovo #cards #card_order input[type="radio"]+label {
     width: 30vw;
   }
 }
 
 @media only screen and (max-width: 479px) {
+
   html#mozaika .main-slider .slide .slide-text .offer-head .middle,
   html#schelkovo .main-slider .slide .slide-text .offer-head .middle,
   html#mozaika .main-slider .slide.type2 .slide-text .offer-head .middle,
@@ -795,8 +800,8 @@ html#schelkovo .advantages .wrapper {
     text-align: center;
   }
 
-  html#mozaika #cards #card_order input[type="radio"] + label,
-  html#schelkovo #cards #card_order input[type="radio"] + label {
+  html#mozaika #cards #card_order input[type="radio"]+label,
+  html#schelkovo #cards #card_order input[type="radio"]+label {
     width: 42vw;
   }
 
@@ -1109,13 +1114,11 @@ header nav.top-menu {
   width: 100%;
   min-height: 50px;
   background-color: #000;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#230a16),
-    to(#0c0b15)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#230a16),
+      to(#0c0b15));
   background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%);
 }
 
@@ -1201,13 +1204,11 @@ nav.popup-menu {
   flex-direction: column;
   position: fixed;
   background-color: #000;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#230a16),
-    to(#0c0b15)
-  );
+  background-image: -webkit-gradient(linear,
+      left top,
+      right top,
+      from(#230a16),
+      to(#0c0b15));
   background-image: linear-gradient(to right, #230a16 0%, #0c0b15 100%);
   height: 100vh;
   width: 100vw;
@@ -1551,6 +1552,7 @@ nav.popup-menu .close-menu-btn img {
   width: 75%;
   position: relative;
 }
+
 .services-slider .servises-trans {
   display: flex;
   margin: 0 40px;
@@ -1662,14 +1664,14 @@ nav.popup-menu .close-menu-btn img {
 }
 
 #gallery .gallery-slider .slider-arrow.prev {
-  left: 0;
+  left: 15%;
   background-image: url(../images/arrow-left.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 #gallery .gallery-slider .slider-arrow.next {
-  right: 0;
+  right: 15%;
   background-image: url(../images/arrow-right.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1753,7 +1755,7 @@ nav.popup-menu .close-menu-btn img {
   justify-content: center;
 }
 
-#card_order .time input[type="radio"] + label {
+#card_order .time input[type="radio"]+label {
   display: inline-block;
   width: 120px;
   height: 45px;
@@ -1771,7 +1773,7 @@ nav.popup-menu .close-menu-btn img {
   cursor: pointer;
 }
 
-#card_order .time input[type="radio"]:checked + label {
+#card_order .time input[type="radio"]:checked+label {
   background-image: none;
   outline: 0;
   background-color: #ffd11a;
@@ -1795,7 +1797,7 @@ nav.popup-menu .close-menu-btn img {
   text-transform: uppercase;
 }
 
-#card_order p.personal-data input[type="checkbox"]:not(checked) + label:before {
+#card_order p.personal-data input[type="checkbox"]:not(checked)+label:before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1807,7 +1809,7 @@ nav.popup-menu .close-menu-btn img {
   left: -29px;
 }
 
-#card_order p.personal-data input[type="checkbox"]:checked + label:before {
+#card_order p.personal-data input[type="checkbox"]:checked+label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -1881,7 +1883,7 @@ nav.popup-menu .close-menu-btn img {
   display: none;
 }
 
-.club input[type="radio"]:not(checked) + label:before {
+.club input[type="radio"]:not(checked)+label:before {
   content: "";
   width: 21px;
   height: 21px;
@@ -1893,7 +1895,7 @@ nav.popup-menu .close-menu-btn img {
   left: -29px;
 }
 
-.club input[type="radio"]:checked + label:before {
+.club input[type="radio"]:checked+label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -1952,7 +1954,7 @@ footer .footer-top .left {
   width: 45%;
 }
 
-footer .footer-top .left > div {
+footer .footer-top .left>div {
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -2253,7 +2255,7 @@ p.personal-data input[type="checkbox"] {
   display: none;
 }
 
-p.personal-data input[type="checkbox"]:not(checked) + label:before {
+p.personal-data input[type="checkbox"]:not(checked)+label:before {
   content: "";
   height: 21px;
   width: 21px;
@@ -2265,7 +2267,7 @@ p.personal-data input[type="checkbox"]:not(checked) + label:before {
   left: -29px;
 }
 
-p.personal-data input[type="checkbox"]:checked + label:before {
+p.personal-data input[type="checkbox"]:checked+label:before {
   content: url(../images/checked.png);
   width: 21px;
   height: 21px;
@@ -2444,6 +2446,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
 }
 
 @media only screen and (max-width: 767px) {
+
   html,
   body {
     font-size: 12px;
@@ -2591,6 +2594,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
 }
 
 @media only screen and (max-width: 479px) {
+
   .main-slider .slide .slide-text .offer-head,
   .main-slider .slide.type2 .slide-text .offer-head {
     background: transparent;
@@ -2626,7 +2630,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
     flex-wrap: wrap;
   }
 
-  #card_order .time input[type="radio"] + label {
+  #card_order .time input[type="radio"]+label {
     width: 40%;
   }
 
@@ -2642,7 +2646,7 @@ p.personal-data input[type="checkbox"]:checked + label:before {
     text-align: center;
   }
 
-  footer .footer-top > div {
+  footer .footer-top>div {
     text-align: center;
   }
 

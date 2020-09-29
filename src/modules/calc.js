@@ -8,7 +8,7 @@ const calc = () => {
     const schelkovo = [2999, 14990, 21990, 24990];
     const mozaika = [1999, 9900, 13900, 19900];
     const timeInput = time.querySelectorAll('input');
-    const sum = () => {
+    const sumPromo = () => {
         club.forEach((item) => {
             if (item.checked) {
                 if (item.value === 'schelkovo') {
@@ -17,17 +17,19 @@ const calc = () => {
                             priceTotal.textContent = schelkovo[index];
                         }
                     });
-                    promo();
                 } else if (item.value === 'mozaika') {
                     timeInput.forEach((item, index) => {
                         if (item.checked) {
                             priceTotal.textContent = mozaika[index];
                         }
                     });
-                    promo();
                 }
             }
         });
+    };
+    const sum = () => {
+        sumPromo();
+        promo();
     };
     cardOrder.addEventListener('click', (event) => {
         const target = event.target;
@@ -50,16 +52,20 @@ const calc = () => {
         }
 
     });
+    //let oldPrice;
     const promo = () => {
         if (promocod.value.trim() === 'ТЕЛО2020') {
+            //oldPrice = priceTotal.textContent;
             priceTotal.textContent =
                 Math.ceil(+priceTotal.textContent - (+priceTotal.textContent * 0.30));
+        } else {
+            sumPromo();
         }
-    }
+    };
     promocod.addEventListener('change', promo);
 
 
-    // console.log(club[0].checked.value);
+
 };
 
 export default calc;

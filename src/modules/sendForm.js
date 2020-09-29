@@ -7,7 +7,7 @@ const sendForm = () => {
     const checkboxInput = document.querySelectorAll("input[type='checkbox']");
     const statusMessage = document.createElement("div");
     statusMessage.textContent = "Подтвердите согласие на обработку данных.";
-    statusMessage.style.color = 'white';
+    statusMessage.style.color = 'red';
     const errorMessage = "Что то пошло не так...";
     const loadMessage = "Идёт отправка...";
     const successMessage = "Ваша заявка отправлена.<br />Мы свяжемся с вами в ближайшее время.";

@@ -65,9 +65,7 @@ const sendForm = () => {
                 body[key] = val;
             });
             if (promocod) {
-                if (promocod.value.trim() === 'ТЕЛО2020') {
-                    body[promocod.getAttribute('name')] = promocod.value;
-                }
+                body[promocod.getAttribute('name')] = promocod.value;
             }
             postData(body)
                 .then((response) => {

@@ -209,7 +209,8 @@
         <form name="banner-form" id="banner-form" action="#" method="post">
           <input type="hidden" name="form_name" value=" Записаться на визит" />
           <input name="name" type="text" required placeholder="Ваше имя..." />
-          <input type="tel" name="phone" id="phone" pattern="[\d]{7,13}" required placeholder="Ваш номер телефона..." />
+          <input type="tel" name="phone" id="phone" pattern="^((8|\+7)?[\d]{7,13}" required
+            placeholder="Ваш номер телефона..." />
           <button name="send" class="btn" type="submit">Записаться</button>
           <p class="personal-data">
             <input type="checkbox" id="check1" /><label for="check1">Я согласен на обработку персональных данных</label>
@@ -377,7 +378,7 @@
               <input name="name" type="text" required placeholder="Ваше имя..." />
             </p>
             <p class="input-text">
-              <input type="tel" name="phone" id="callback_form-phone" pattern="[\d]{7,13}" required
+              <input type="tel" name="phone" id="callback_form-phone" pattern="^((8|\+7)?[\d]{7,13}" required
                 placeholder="Ваш номер телефона..." />
             </p>
             <p class="personal-data">
@@ -440,7 +441,7 @@
                 <p>Единый телефон</p>
                 <p class="tel">+7 (800) 555-64-47</p>
                 <p class="input-text">
-                  <input type="tel" name="phone" id="callback_footer_form-phone" pattern="[\d]{7,13}" required
+                  <input type="tel" name="phone" id="callback_footer_form-phone" pattern="^((8|\+7)?[\d]{7,13}" required
                     placeholder="Ваш номер телефона..." />
                 </p>
 
@@ -506,7 +507,7 @@
             <input name="name" type="text" required placeholder="Ваше имя..." />
           </p>
           <p class="input-text">
-            <input type="tel" name="phone" id="callback_form1-phone" pattern="[\d]{7,13}" required
+            <input type="tel" name="phone" id="callback_form1-phone" pattern="^((8|\+7)?[\d]{7,13}" required
               placeholder="Ваш номер телефона..." />
           </p>
           <p class="personal-data">
@@ -534,7 +535,7 @@
             <input name="name" type="text" required placeholder="Ваше имя..." />
           </p>
           <p class="input-text">
-            <input type="tel" name="phone" id="callback_form2-phone" pattern="[\d]{7,13}" required
+            <input type="tel" name="phone" id="callback_form2-phone" pattern="^((8|\+7)?[\d]{7,13}" required
               placeholder="Ваш номер телефона..." />
           </p>
           <p class="personal-data">

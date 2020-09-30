@@ -6,12 +6,11 @@ const toggleModal = () => {
     const fixedGift = document.querySelector(".fixed-gift>img");
     const giftForm = document.querySelector("#gift");
     const popupThanks = document.querySelector('#thanks');
+    const callButton = document.querySelector('.call>button');
     document.addEventListener("click", (event) => {
         const target = event.target;
         //выбрать клуб
-        if (target !== clubList && target !== clubsListUl) {
-            clubsListUl.style.display = "none";
-        } else if (target === clubList) {
+        if (target === clubList) {
             clubsListUl.style.display =
                 clubsListUl.style.display !== "block" ? "block" : "none";
         }
@@ -25,7 +24,7 @@ const toggleModal = () => {
             freeVisitForm.style.display = "none";
         }
         //перезвоните мне вывод формы
-        if (target.dataset.popup === "#callback_form") {
+        if (target === callButton) {
             callbackForm.style.display = "block";
         } else if (
             target.matches(".close_icon") ||

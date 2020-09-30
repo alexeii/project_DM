@@ -4,7 +4,15 @@ const sendForm = () => {
     const textMessage = popupThanks.querySelector('.form-content>p');
     const freeVisitForm = document.querySelector("#free_visit_form");
     const callbackForm = document.querySelector("#callback_form");
+    const cardOrder = document.querySelector("#card_order");
+    const cardOrderCheck = cardOrder.querySelectorAll("input[name ='club-name']");
+    const cardOrderRadio = cardOrder.querySelectorAll("input[type='radio']");
     const checkboxInput = document.querySelectorAll("input[type='checkbox']");
+    const footerForm = document.querySelector("#footer_form");
+    const footerRadio = footerForm.querySelectorAll("input[type='radio']");
+    const priceTotal = cardOrder.querySelector('#price-total');
+    //const userPhoneValid = document.querySelectorAll("input[type='tel']");
+    //const checkboxRadio = document.querySelectorAll("input[type='radio']");
     const statusMessage = document.createElement("div");
     statusMessage.textContent = "Подтвердите согласие на обработку данных.";
     statusMessage.style.color = 'red';
@@ -14,6 +22,7 @@ const sendForm = () => {
     let count = 0;
     let interval;
 
+    console.log(cardOrderRadio);
 
 
     form.forEach((item) => {
@@ -63,6 +72,20 @@ const sendForm = () => {
                     textMessage.innerHTML = successMessage;
                     event.target.querySelectorAll("input").forEach((item) => {
                         item.value = "";
+                    });
+                    if (cardOrderCheck) {
+                        cardOrderCheck.forEach((item) => {
+                            item.checked = false;
+                        });
+                        if (cardOrderCheck[0]) {
+                            cardOrderCheck[0].checked = true;
+                            priceTotal.textContent = 1999;
+                        }
+
+                    }
+                    cardOrderRadio[0].checked = true;
+                    footerRadio.forEach((item) => {
+                        item.checked = false;
                     });
                     checkboxInput.forEach((item) => {
                         item.checked = false;

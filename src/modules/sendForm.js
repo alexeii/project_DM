@@ -11,8 +11,8 @@ const sendForm = () => {
     const footerForm = document.querySelector("#footer_form");
     const footerRadio = footerForm.querySelectorAll("input[type='radio']");
     const priceTotal = cardOrder.querySelector('#price-total');
-    //const userPhoneValid = document.querySelectorAll("input[type='tel']");
-    //const checkboxRadio = document.querySelectorAll("input[type='radio']");
+    const promocod = cardOrder.querySelector('.input-text>input');
+
     const statusMessage = document.createElement("div");
     statusMessage.textContent = "Подтвердите согласие на обработку данных.";
     statusMessage.style.color = 'red';
@@ -22,7 +22,7 @@ const sendForm = () => {
     let count = 0;
     let interval;
 
-    console.log(cardOrderRadio);
+    console.log(promocod);
 
 
     form.forEach((item) => {
@@ -64,6 +64,11 @@ const sendForm = () => {
             formData.forEach((val, key) => {
                 body[key] = val;
             });
+            if (promocod) {
+                if (promocod.value.trim() === 'ТЕЛО2020') {
+                    body[promocod.getAttribute('name')] = promocod.value;
+                }
+            }
             postData(body)
                 .then((response) => {
                     if (response.status !== 200) {

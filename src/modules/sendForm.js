@@ -22,7 +22,7 @@ const sendForm = () => {
     let count = 0;
     let interval;
 
-    console.log(promocod);
+
 
 
     form.forEach((item) => {
